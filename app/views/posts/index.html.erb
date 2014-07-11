@@ -4,17 +4,19 @@ th,td
 border:2px solid FireBrick;
 }
 </style>
-<table style='width:75%'>
+<table style='width:65%'>
   <tbody>
     <% @posts.each do |post| %>
       <tr>
 		<td>
         <h2>
-		<%= post.title %>
-		</h2>
-        <%= post.content %><br />
-		Posted: <%= post.created_at%><br />
-        <%= link_to 'Show', post %>
+		<%= link_to post.title, post %>
+		</h2><br />
+		<p>
+        <%= post.content.split("\n", 2)[0]%><br /><br />
+		</p>
+		Posted: <%=l post.created_at, :format=> :post_datetime %><br />
+ 
 		<% if logged_in?%>
         <%= link_to 'Edit', edit_post_path(post) %>
         <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>

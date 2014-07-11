@@ -21,3 +21,6 @@
 
 en:
   hello: "Hello world"
+  time:
+   formats:
+     post_datetime: '%m/%d/%Y at %I:%M %p'

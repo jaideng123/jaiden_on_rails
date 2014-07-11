@@ -7,8 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<h1>Jaiden On Rails</h1>
+<br />
+<h1>Jaiden On Rails</h1><br />
+<div class="wrapper">
 <%= yield %>
-<%= link_to 'New Post', new_post_path %>
+</div>
+<div class="footer">
+<p>
+<br />
+<br />
+<small>
+This site is owned and operated by <%= link_to 'Jaiden Gerig', new_post_path %><br />
+<%=mail_to "jaideng123@yahoo.com", "Contact me"%>
+</small>
+</p>
+</div>
+
+
 </body>
 </html>
