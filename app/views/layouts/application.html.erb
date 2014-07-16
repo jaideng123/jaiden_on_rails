@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="http://mislav.uniqpath.com/will_paginate/pagination.css">
 <head>
   <title>JaidenOnRails</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -8,10 +9,9 @@
 </head>
 <body>
 <br />
-<h1>Jaiden On Rails</h1><br />
-<div class="wrapper">
+<h1><%= link_to 'Jaiden On Rails', root_url%></h1><br />
+
 <%= yield %>
-</div>
 <div class="footer">
 <p>
 <br />

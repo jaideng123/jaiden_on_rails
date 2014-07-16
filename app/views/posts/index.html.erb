@@ -1,3 +1,4 @@
+
 <style>
 th,td
 {
@@ -11,11 +12,13 @@ border:2px solid FireBrick;
 		<td>
         <h2>
 		<%= link_to post.title, post %>
-		</h2><br />
+		</h2>
+		<%=l post.created_at, :format=> :post_datetime %>
+		<br />
 		<p>
         <%= post.content.split("\n", 2)[0]%><br /><br />
 		</p>
-		Posted: <%=l post.created_at, :format=> :post_datetime %><br />
+		<br />
  
 		<% if logged_in?%>
         <%= link_to 'Edit', edit_post_path(post) %>
@@ -27,6 +30,7 @@ border:2px solid FireBrick;
     <% end %>
   </tbody>
 </table>
+<%= will_paginate @posts, :class => 'digg_pagination' %>
 
 <br>
 
