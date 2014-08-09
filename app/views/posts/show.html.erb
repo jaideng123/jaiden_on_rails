@@ -4,8 +4,12 @@ th,td
 {
 border:2px solid FireBrick;
 }
+p
+{
+white-space:pre-wrap;
+} 
 </style>
-<table style='width:65%'>
+<table style='width:95%; max-width: 900px;'>
   <tbody>
       <tr>
 		<td>
@@ -13,10 +17,10 @@ border:2px solid FireBrick;
 		<%= @post.title%>
 		</h2>
 		<%=l @post.created_at, :format=> :post_datetime %><br />
-		<br />
 		<p>
-        <%= @post.content%><br /><br />
+        <%= @post.content%>
 		</p>
+		<br />
 		
  
 		<% if logged_in?%>
