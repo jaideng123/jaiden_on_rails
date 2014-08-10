@@ -76,7 +76,7 @@ class PostsController < ApplicationController
 	#basic authentication so only i can post things
   def authenticate
     authenticate_or_request_with_http_basic('Admin') do |name, password|
-	  name == "jaideng123" && password == "neos365247"
+	  name == APP_CONFIG['username'] && password == APP_CONFIG['password']
 	end
   end
 end
