@@ -20,7 +20,7 @@ white-space:pre-wrap;
 		<%=l post.created_at, :format=> :post_datetime %>
 		<br />
 		<p>
-        <%= post.content.split("\n", 2)[0]%>
+        <%= raw post.content.split("\n", 2)[0]%>
 		</p>
 		<br />
  
@@ -35,6 +35,5 @@ white-space:pre-wrap;
   </tbody>
 </table>
 <%= will_paginate @posts, :class => 'digg_pagination' %>
-
 <br>
 

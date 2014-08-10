@@ -3,13 +3,14 @@ source 'https://rubygems.org'
 #For Pagination
 gem 'will_paginate'
 
+gem 'ckeditor'
+gem 'paperclip'
+
 #For Heroku
 gem 'rails_12factor', group: :production
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
-group :production do
-  gem 'pg'
-end
+#Postgresql
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
