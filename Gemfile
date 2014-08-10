@@ -3,6 +3,10 @@ source 'https://rubygems.org'
 #For Pagination
 gem 'will_paginate'
 
+#For serving Static Pages
+gem 'high_voltage'
+
+#For editing content
 gem 'ckeditor'
 gem 'paperclip'
 
