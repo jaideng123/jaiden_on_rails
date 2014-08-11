@@ -17,3 +17,4 @@
 //= require bootstrap.min
 //= require bootstrap-modalmanager
 //= require bootstrap-modal
+//= require ckeditor/init
