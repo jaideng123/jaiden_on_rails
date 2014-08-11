@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/galetahub/ckeditor.git
+  revision: 6d8032b87595c3ffa8e9dfd7d86721ecdc53a3e3
+  specs:
+    ckeditor (4.1.0)
+      mime-types
+      orm_adapter (~> 0.5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -29,9 +37,6 @@ GEM
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
     builder (3.2.2)
-    ckeditor (4.1.0)
-      mime-types
-      orm_adapter (~> 0.5.0)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.4)
@@ -134,7 +139,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  ckeditor
+  ckeditor!
   coffee-rails (~> 4.0.0)
   high_voltage
   jbuilder (~> 2.0)

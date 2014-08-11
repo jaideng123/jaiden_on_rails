@@ -7,7 +7,7 @@ gem 'will_paginate'
 gem 'high_voltage'
 
 #For editing content
-gem 'ckeditor'
+gem "ckeditor", :git => "https://github.com/galetahub/ckeditor.git"
 gem 'paperclip'
 
 #For Heroku

@@ -1,8 +1,8 @@
 require 'test_helper'
-
 class PostsControllerTest < ActionController::TestCase
   setup do
     @post = posts(:one)
+	http_login
   end
 
   test "should get index" do

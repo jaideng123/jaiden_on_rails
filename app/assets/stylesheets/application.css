@@ -43,10 +43,15 @@ margin: 0 auto;
 html{
 margin-left:1em
 }
-
 /*
 
 Sticky Footer by Ryan Fait
 http://ryanfait.com/
 
 */
+.xspInputFieldRichText * {
+  box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -ms-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+  }

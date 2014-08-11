@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 <link rel="stylesheet" href="http://mislav.uniqpath.com/will_paginate/pagination.css">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <%= stylesheet_link_tag    "/assets/bootstrap.min" %>
 <%= javascript_include_tag "/assets/bootstrap.min" %>
   <head>
+	<%= javascript_include_tag 'application' %>
+	<%= csrf_meta_tag %>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
