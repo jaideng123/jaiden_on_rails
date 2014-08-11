@@ -6,6 +6,9 @@ gem 'will_paginate'
 #For serving Static Pages
 gem 'high_voltage'
 
+#for setting environment variables
+gem 'figaro'
+
 #For editing content
 gem "ckeditor", :git => "https://github.com/galetahub/ckeditor.git"
 gem 'paperclip'
