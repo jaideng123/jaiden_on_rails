@@ -75,8 +75,8 @@ class PostsController < ApplicationController
 	private
 	#basic authentication so only i can post things
   def authenticate
-    authenticate_or_request_with_http_basic('Site Owner') do |name, password|
-	  name == ENV["USERNAME"] && password == ENV["PASSWORD"]
+    authenticate_or_request_with_http_basic("Site Owner") do |name, password|
+	  name == ENV["NAME"] && password == ENV["PASSWORD"]
 	end
   end
 end
