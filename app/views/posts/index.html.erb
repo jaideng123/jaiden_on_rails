@@ -1,15 +1,23 @@
-
 <style>
 th,td
 {
 border:2px solid FireBrick;
 }
+
 p
 {
 white-space:pre-wrap;
 } 
+table
+{
+width:94%; 
+max-width: 800px; 
+margin: 0 auto; 
+border-spacing: 8px; 
+border-collapse: separate;
+}
 </style>
-<table style='width:94%; max-width: 800px; margin: 0 auto'>
+<table>
   <tbody>
     <% @posts.each do |post| %>
       <tr>
@@ -18,7 +26,7 @@ white-space:pre-wrap;
 		<%= link_to post.title, post %>
 		</h2>
 		<%=l post.created_at, :format=> :post_datetime %>
-		<br />
+		
 		<p>
         <%= raw post.content.split("\n", 2)[0]%>
 		</p>
