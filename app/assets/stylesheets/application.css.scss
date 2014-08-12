@@ -15,6 +15,8 @@
  *= require bootstrap.min
  *= require bootstrap-modal.css
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
  @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('../assets/glyphicons-halflings-regular.eot');

@@ -19,3 +19,4 @@
 //= require bootstrap-modalmanager
 //= require bootstrap-modal
 //= require ckeditor/init
+//= require bootstrap-sprockets

@@ -20,9 +20,10 @@ gem 'rails', '4.1.1'
 #Postgresql
 gem 'pg'
 
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem "compass-rails"
 gem 'bootstrap-sass'
-gem 'bootstrap-sass-rails'
+gem 'autoprefixer-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
