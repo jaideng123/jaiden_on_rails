@@ -15,6 +15,9 @@ gem 'paperclip'
 
 #For Heroku
 gem 'rails_12factor', group: :production
+group :assets do
+  gem 'less'
+end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 #Postgresql
