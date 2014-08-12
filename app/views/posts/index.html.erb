@@ -1,32 +1,15 @@
 <style>
-th,td
-{
-border:2px solid FireBrick;
-}
-
 p
 {
 white-space:pre-wrap;
 } 
-table
-{
-width:94%; 
-max-width: 800px; 
-margin: 0 auto; 
-border-spacing: 8px; 
-border-collapse: separate;
-}
 </style>
-<table>
-  <tbody>
     <% @posts.each do |post| %>
-      <tr>
-		<td>
-        <h2>
+     <div class="row" style ='width:95%; max-width: 800px;'>
+		<h2>
 		<%= link_to post.title, post %>
 		</h2>
 		<%=l post.created_at, :format=> :post_datetime %>
-		
 		<p>
         <%= raw post.content.split("\n", 2)[0]%>
 		</p>
@@ -36,12 +19,9 @@ border-collapse: separate;
         <%= link_to 'Edit', edit_post_path(post) %>
         <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
 		<%end%>
-		</td>
 		
-      </tr>
+	</div>
     <% end %>
-  </tbody>
-</table>
 <%= will_paginate @posts, :class => 'digg_pagination' %>
 <br>
 
