@@ -10,9 +10,9 @@ white-space:pre-wrap;
 		<%= link_to post.title, post %>
 		</h2>
 		<%=l post.created_at, :format=> :post_datetime %>
-		<p>
+		<br />
+		<br />
         <%= raw post.content.split("\n", 2)[0]%>
-		</p>
 		<br />
  
 		<% if logged_in?%>

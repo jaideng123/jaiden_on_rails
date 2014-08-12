@@ -10,9 +10,9 @@ white-space:pre-wrap;
 		<%=@post.title%>
 		</h2>
 		<%=l @post.created_at, :format=> :post_datetime %>
-		<p>
+		<br />
+		<br />
         <%= raw @post.content%>
-		</p>
 		<br />
  
 		<% if logged_in?%>
