@@ -1,0 +1,36 @@
+img{
+max-width: 800px;
+width: 95%;
+}
+ * {
+	margin: 0 auto;
+}
+html, body {
+	height: 100%;
+position: relative;
+}
+#content img { max-width: 100%; height: auto }
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+	height: 155px; /* .push must be the same height as .footer */
+}
+html{
+margin-left:1em
+}
+/*
+
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+
+*/
+.xspInputFieldRichText * {
+  box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -ms-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+  }
