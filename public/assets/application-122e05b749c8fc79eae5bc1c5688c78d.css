@@ -36,8 +36,6 @@ http://ryanfait.com/
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
@@ -55,8 +53,6 @@ http://ryanfait.com/
 	margin: 0 auto;
    overflow-y: auto;
     -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 #wrapper.toggled #sidebar-wrapper {
