@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="http://mislav.uniqpath.com/will_paginate/pagination.css">
+<%= stylesheet_link_tag    "/assets/pagination" %>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <%= stylesheet_link_tag    "/assets/bootstrap.min" %>
 <%= javascript_include_tag "/assets/bootstrap.min" %>
@@ -56,7 +56,7 @@
             <li class = "<%= 'active' if current_page?('/')%>">
 			<a href="/">Home</a></li>
             <li class = "<%= 'active' if current_page?('/pages/about')%>">
-			<%=link_to 'About Me', page_path('about')%></li>
+			<%=link_to 'About', page_path('about')%></li>
             <li><%=mail_to "jaidengerig@gmail.com", "Contact me"%></li>
           </ul>
         </div><!--/.nav-collapse -->

@@ -31,7 +31,6 @@ http://ryanfait.com/
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-/* Toggle Styles */
 /* for About me Section*/
 #wrapper {
     padding-left: 0;
@@ -84,8 +83,8 @@ http://ryanfait.com/
     overflow: auto;
     }
 }
-/* portrait scales with browser size*/
-@media(min-width:830px) {
+/*how i deal with browser sizes, a little hacky, could be cleaner*/
+@media(min-width:850px) {
     #wrapper {
         padding-left: 15%;
     }

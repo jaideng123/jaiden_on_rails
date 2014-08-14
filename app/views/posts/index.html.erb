@@ -1,27 +1,28 @@
 <style>
 p
 {
-white-space:pre-wrap;
+  white-space:pre-wrap;
 } 
 </style>
-    <% @posts.each do |post| %>
-     <div class="row" style ='width:95%; max-width: 800px; margin-left: 15px;'>
-		<h2>
-		<%= link_to post.title, post %>
-		</h2>
-		<%=l post.created_at, :format=> :post_datetime %>
-		<br />
-		<br />
-        <%= raw post.content.split("\n", 2)[0]%>
-		<br />
- 
-		<% if logged_in?%>
-        <%= link_to 'Edit', edit_post_path(post) %>
-        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
-		<%end%>
+<% @posts.each do |post| %>
+  <div class="row" style ='width:95%; max-width: 800px; margin-left: 15px;'>
+    <h2>
+      <%= link_to post.title, post %>
+    </h2>
+    <p style = 'white-space: initial;'>
+      <i class="fa fa-clock-o"></i> Posted: <%=l post.created_at, :format=> :post_datetime %>
+    </p>
+    <span style="line-height:60px"></span> 
+    <%= raw post.content.split("\n", 2)[0]%>
+    <br />
+	
+      <% if logged_in?%>
+      <%= link_to 'Edit', edit_post_path(post) %>
+      <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <%end%>
 		
-	</div>
-    <% end %>
+  </div>
+<% end %>
 <%= will_paginate @posts, :class => 'digg_pagination' %>
-<br>
+<br />
 
