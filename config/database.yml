@@ -19,24 +19,24 @@ development:
   encoding: unicode
   database: jaiden_on_rails_development
   pool: 5
-  username: postgres
-  password: jaiden12
+  username: jaideng123
+  password: 
 
 test: &TEST
   adapter: postgresql
   encoding: unicode
   database: jaiden_on_rails_test
   pool: 5
-  username: postgres
-  password: jaiden12
+  username: jaideng123
+  password: 
 
 production:
   adapter: postgresql
   encoding: unicode
   database: jaiden_on_rails_production
   pool: 5
-  username: postgres
-  password: jaiden12
+  username: jaideng123
+  password: 
 
 cucumber:
   <<: *TEST
