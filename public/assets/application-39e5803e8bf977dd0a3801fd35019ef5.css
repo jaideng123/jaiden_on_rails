@@ -1,0 +1,180 @@
+img{
+max-width: 800px;
+max-width: 95%;
+}
+
+#content img { max-width: 100%; height: auto }
+.wrapper {
+padding-left: 250px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+	height: 155px; /* .push must be the same height as .footer */
+}
+/*
+
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+
+*/
+.xspInputFieldRichText * {
+  box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -ms-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+  }
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* for About me Section*/
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: relative;
+    left: 0px;
+    width: 250px;
+    height: 100%;
+    margin-left: -250px;
+	margin: 0 auto;
+   overflow-y: auto;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+@media(min-width:1200px){
+	 #sidebar-wrapper {
+    z-index: 1000;
+    position: absolute;
+    left: 14%;
+    width: 250px;
+    height: 100%;
+    margin-left: -15%;
+    overflow: auto;
+    }
+}
+/*how i deal with browser sizes, a little hacky, could be cleaner*/
+@media(min-width:850px) {
+    #wrapper {
+        padding-left: 15%;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+    z-index: 1000;
+    position: absolute;
+    left: 15%;
+    width: 250px;
+    height: 100%;
+    margin-left: -15%;
+    overflow: auto;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        left-padding: 80px;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+@media(min-width:1300px){
+	 #sidebar-wrapper {
+    z-index: 1000;
+    position: absolute;
+    left: 21%;
+    width: 250px;
+    height: 100%;
+    margin-left: -15%;
+    overflow: auto;
+    }
+}
+@media(min-width:1390px){
+	 #sidebar-wrapper {
+    z-index: 1000;
+    position: absolute;
+    left: 23%;
+    width: 250px;
+    height: 100%;
+    margin-left: -15%;
+    overflow: auto;
+    }
+}
+@media(min-width:1490px){
+	 #sidebar-wrapper {
+    z-index: 1000;
+    position: absolute;
+    left: 26%;
+    width: 250px;
+    height: 100%;
+    margin-left: -15%;
+    overflow: auto;
+    }
+}
+@media(min-width:1590px){
+	 #sidebar-wrapper {
+    z-index: 1000;
+    position: absolute;
+    left: 28%;
+    width: 250px;
+    height: 100%;
+    margin-left: -15%;
+    overflow: auto;
+    }
+}
+@media(min-width:1700px){
+	 #sidebar-wrapper {
+    z-index: 1000;
+    position: absolute;
+    left: 30%;
+    width: 250px;
+    height: 100%;
+    margin-left: -15%;
+    overflow: auto;
+    }
+}
+@media(min-width:1900px){
+	 #sidebar-wrapper {
+    z-index: 1000;
+    position: absolute;
+    left: 32%;
+    width: 250px;
+    height: 100%;
+    margin-left: -15%;
+    overflow: auto;
+    }
+}
