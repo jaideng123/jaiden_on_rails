@@ -16,7 +16,7 @@
 /tmp
 
 #ignore database file
-config/database.yml
+/config/database.yml
 
 #ignore bootswatch
 /bootswatch

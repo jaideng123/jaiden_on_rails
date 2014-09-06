@@ -1,6 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
 img{
 max-width: 800px;
 max-width: 95%;
+}
+#bio{
+font-family: 'Roboto', sans-serif;
+font-size: 19px;
+color: black;
+}
+#docviewer{
+position: absolute; 
+max-height:1100px; 
+height: 90%; 
+max-width: 90%; 
+width: 800px; 
+padding-right: 15px;
 }
 
 #content img { max-width: 100%; height: auto }
