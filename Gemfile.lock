@@ -181,10 +181,8 @@ DEPENDENCIES
   pg
   rails (= 4.1.1)
   rails_12factor
-  railties
   sass-rails
   sdoc (~> 0.4.0)
-  sprockets-rails
   turbolinks
   twitter-bootstrap-rails!
   tzinfo-data

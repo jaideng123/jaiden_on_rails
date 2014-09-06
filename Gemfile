@@ -15,8 +15,6 @@ gem 'paperclip'
 
 #For Heroku
 gem 'rails_12factor', group: :production
-gem 'sprockets-rails'
-gem 'railties'
 group :assets do
   gem 'less'
 end
