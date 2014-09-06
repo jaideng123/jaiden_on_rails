@@ -15,5 +15,8 @@
 /log/*.log
 /tmp
 
+#ignore database file
+config/database.yml
+
 #ignore bootswatch
 /bootswatch
